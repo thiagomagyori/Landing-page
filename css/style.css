@@ -1,0 +1,146 @@
+body
+{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #1b6cf770;
+}
+.container
+{
+    max-width: 1920px; /*Largura maxima da tela*/
+    padding: 0;
+}
+
+header
+{
+    position: relative;
+    top: 0; /*deixando como 0 para o menu encosar ao top da pagina*/
+    width: 100%; /*largura do header 100% da tela*/
+}
+
+nav
+{
+display: flex;
+justify-content: center;
+top: 0;
+width: 100%;
+border-bottom: 1px solid rgba(255, 255, 255, 0.336);
+}
+
+.bar_container
+{
+  
+    max-width: 1200px;
+  
+   
+}
+
+.bar_container ul
+{
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.bar_container li
+{
+    list-style: none; /*tira a bolinha ao lado do nome*/
+    float: left;/*posiciona os elemento da lista um ao lado do outro*/
+    margin: 0 20px;
+}
+
+.bar_container li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+}
+
+.bar_container a::after
+{
+    content: "";
+    position: absolute;
+    background-color: #21252967;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.bar_container a:hover::after
+{
+width: 100%;
+}
+
+#sinal_on
+{
+    position: absolute;
+    margin-left: 1019px;
+    width: 150px;
+    height: 150px;
+}
+/*===================MENU===================================*/
+.sobre
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #fff;
+   
+}
+
+#perfil-img
+{
+    border-radius: 50%;
+    width: 190px;
+    height: 210px;
+    border: 4px solid #fff;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.404);
+    margin-left: 2em;
+    margin-top: 1em;
+    
+}
+
+.info
+{
+    animation-name: animation_01; /*nome da animação criada lá no campo de animações*/
+    animation-duration: 5s; /*velocidade que a animação vai acontecer*/  /*animation-iteration-count: infinite; faz com que ela entra em um lup*/
+    animation-timing-function: ease-out;
+    margin-top: 10em;
+    text-align: center;
+    padding-left: 1em;
+
+}
+
+.info h1
+{
+    color: #fff;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.info p
+{
+    
+    font-size: 1.2em;
+    font-family: 'Ubuntu', sans-serif;
+    color: #212529b4;
+}
+
+
+@keyframes animation_01
+{
+
+from 
+{
+    opacity: 0;
+    margin-top: 50px;
+
+}
+
+to {opacity: 1;}
+
+}
