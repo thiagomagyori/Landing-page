@@ -143,6 +143,7 @@ to {opacity: 1;}
 .container_cards
 {
     margin-top: 2em;
+    
 }
 
 .saiba_mais
@@ -169,7 +170,7 @@ to {opacity: 1;}
     width: 350px;
 }
 
-.youtube
+#youtube
 {
     display: flex;
     width: 560px;
@@ -186,4 +187,25 @@ to {opacity: 1;}
     display: flex;
     justify-content: space-around;
     grid-gap: 0px 8px;
+}
+
+.sobre_footer
+{
+    background-color: rgba(105, 105, 105, 0.205);
+    margin-bottom: 7em;
+    text-align: center;
+    width: 100%;
+} 
+
+footer
+{
+background-color: rgba(0, 0, 0, 0.651);
+padding-top: 0.5em;
+color: aliceblue;
+text-align: center;
+}
+
+footer a
+{
+    text-decoration: none;
 }
