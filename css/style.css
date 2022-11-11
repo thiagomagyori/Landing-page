@@ -195,7 +195,14 @@ to {opacity: 1;}
     margin-bottom: 7em;
     text-align: center;
     width: 100%;
+    color: red;
 } 
+
+.aviso p
+{
+    color: #212529b4;
+}
+
 
 footer
 {
@@ -214,4 +221,44 @@ footer a
 .icon p
 {
 margin: 0;
+}
+
+.aviso a
+{
+    color: rgb(255, 255, 255);
+}
+
+/*responsive*/
+
+@media screen and (max-width: 1024px){
+
+.secao_card
+{
+    display: block;
+}
+
+.card
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#card1, #card2, #card3, #card4
+{
+padding-bottom: 1em;
+}
+
+#youtube
+{
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#im-bg
+{
+    display: none;
+}
+
+
 }
